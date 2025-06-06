@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us | Gurmeet Building Materials</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-900 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2 ml-4">
+        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="gurmeet building materilas logo" class="inline-block">
+          <circle cx="50" cy="50" r="50" fill="#4CAF50" />
+          <text x="50" y="55" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" alignment-baseline="middle" font-weight="bold">
+            gurmeet
+          </text>
+        </svg>
+        <h1 class="text-2xl font-bold">Gurmeet Building Materials</h1>
+      </a>
+      <button id="menu-btn" class="block md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="products.html" class="hover:text-yellow-300">Products</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300 font-semibold underline">About</a></li>
+        <li><a href="services.html" class="hover:text-yellow-300">Services</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- About Section -->
+  <section class="py-10 px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-blue-900 mb-4">About Us</h2>
+    <p class="text-lg text-gray-700">
+      Gurmeet Building Material provides you the best range of garden shovel, cement, roofing sheet, natural stone tiles,
+      cement roofing sheets & color paper with effective & timely delivery.
+    </p>
+
+    <!-- Info Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10">
+      
+      <div class="flex items-start space-x-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991101.png" alt="Business" class="w-10 h-10">
+        <div>
+          <p class="font-semibold">Nature of Business</p>
+          <p class="text-gray-600">Retailer</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/2889/2889676.png" alt="Legal Status" class="w-10 h-10">
+        <div>
+          <p class="font-semibold">Legal Status of Firm</p>
+          <p class="text-gray-600">Proprietorship</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828911.png" alt="Turnover" class="w-10 h-10">
+        <div>
+          <p class="font-semibold">Annual Turnover</p>
+          <p class="text-gray-600">0 - 40 L</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/3103/3103446.png" alt="GST Date" class="w-10 h-10">
+        <div>
+          <p class="font-semibold">GST Registration Date</p>
+          <p class="text-gray-600">01-07-2017</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/597/597177.png" alt="GST No" class="w-10 h-10">
+        <div>
+          <p class="font-semibold">GST Number</p>
+          <p class="text-gray-600">09CFZPS8916P1ZU</p>
+        </div>
+      </div>
+
+      <div class="flex items-start space-x-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Owner Info" class="w-10 h-10">
+        <div>
+          <p class="font-semibold">Contact Person</p>
+          <p class="text-gray-600">Paramjeet Singh<br>Village Dhawarshi, Amroha, UP<br>📞 9634899603</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 bg-blue-900 text-white mt-10">
+    &copy; 2025 Gurmeet Building Materials. All rights reserved.
+  </footer>
+
+</body>
+</html>

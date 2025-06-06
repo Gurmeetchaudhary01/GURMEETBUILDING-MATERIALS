@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heavy Duty Gate Hinge | Gurmeet Building Materials</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+  <!-- Navbar -->
+  <nav class="bg-blue-900 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="index.html" class="flex items-center space-x-2 ml-4">
+        <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="gurmeet building materilas logo" class="inline-block">
+          <circle cx="50" cy="50" r="50" fill="#4CAF50" />
+          <text x="50" y="55" font-family="Arial, sans-serif" font-size="14" fill="white" text-anchor="middle" alignment-baseline="middle" font-weight="bold">
+            gurmeet
+          </text>
+        </svg>
+        <h1 class="text-2xl font-bold">Gurmeet Building Materials</h1>
+      </a>
+      <button id="menu-btn" class="block md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      <ul id="menu" class="hidden md:flex space-x-6">
+        <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="products.html" class="hover:text-yellow-300">Products</a></li>
+        <li><a href="about.html" class="hover:text-yellow-300">About</a></li>
+        <li><a href="services.html" class="hover:text-yellow-300">Services</a></li>
+        <li><a href="contact.html" class="hover:text-yellow-300">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+
+   <!-- Product Section -->
+  <section class="p-10">
+    <h2 class="text-3xl font-bold mb-6 text-center text-blue-900">Our Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- Product 1 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <a href="product1.html">
+          <img src="" alt="Gate Hinge" class="w-full h-48 object-cover">
+        </a>
+        <div class="p-4">
+          <h3 class="text-xl font-semibold"></h3>
+          <p class="text-gray-600">[ ₹ Price here ]</p>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/8/332799943/FH/ED/RR/174722579/heavy-door-latch.jpg" alt="Door Latch" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold"></h3>
+          <p class="text-gray-600">[ ₹ Price here ]</p>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/6/WQ/MW/NX/67791221/iron-door-stop.jpg" alt="Door Stop" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold"></h3>
+          <p class="text-gray-600">[ ₹ Price here ]</p>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/9/338138137/ZP/FK/IC/160022270/ashok-cement-sheet.jpg" alt="Ashok Cement Sheet" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold"></h3>
+          <p class="text-gray-600">[ ₹ Price here ]</p>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/2/JS/TG/IR/92423344/door-tower-bolt.jpg" alt="Tower Bolt" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold"></h3>
+          <p class="text-gray-600">[ ₹ Price here ]</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center p-4 bg-blue-900 text-white mt-10">
+    &copy; 2025 Gurmeet Building Materials. All rights reserved.
+  </footer>
+
+</body>
+</html>
